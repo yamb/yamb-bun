@@ -1,0 +1,20 @@
+{
+  "file_types": {
+    "JSON": ["**/*.json"]
+  },
+  "languages": {
+    "JavaScript": {
+      "format_on_save": "on",
+      "language_servers": ["typescript-language-server", "oxlint"],
+      "formatter": {
+        "external": {
+          "command": "bun",
+          "arguments": ["fmt", "--no-script", "--stdin-filepath", "{buffer_path}"]
+        }
+      },
+      "code_actions_on_format": {
+        "source.fixAll.oxc": true
+      }
+    }
+  }
+}

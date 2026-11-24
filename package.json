@@ -1,0 +1,42 @@
+{
+  "name": "yamb-bun",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A local Yamb blog on Bun",
+  "keywords": [
+    "blog",
+    "bun",
+    "example",
+    "markdown",
+    "yamb"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Alexey Simonenko",
+    "email": "alexey@simonenko.dev",
+    "url": "https://simonenko.xyz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yamb/yamb-bun.git"
+  },
+  "type": "module",
+  "scripts": {
+    "lint": "bun run --bun oxlint",
+    "format": "bun fmt --no-script",
+    "format:check": "bun fmt --check --no-script",
+    "test": "bun test",
+    "test:watch": "bun test --watch",
+    "start": "bun --no-install server.js"
+  },
+  "dependencies": {
+    "yamb": "1.0.5",
+    "yamb-markdown": "0.1.4",
+    "yamb-render-html": "0.1.2",
+    "yamb-storage-files": "0.1.3"
+  },
+  "devDependencies": {
+    "oxlint": "1.95.0"
+  },
+  "packageManager": "bun@1.4.5"
+}
